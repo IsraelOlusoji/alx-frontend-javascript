@@ -60,7 +60,7 @@ interface StudentClassConstructor {
   new (firstName: string, lastName: string): StudentClassInterface;
 }
 
-class StudentClass  {
+class StudentClass {
   firstName: string;
   lastName: string;
 
@@ -72,6 +72,7 @@ class StudentClass  {
   workOnHomework(): string {
     return "Currently working";
   }
+
   displayName(): string {
     return this.firstName;
   }
