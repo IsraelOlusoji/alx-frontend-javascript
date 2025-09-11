@@ -38,7 +38,7 @@ function printTeacher({
   firstName: string;
   lastName: string;
 }) {
-  return `${firstName}. ${lastName}`;
+//   return `${firstName}. ${lastName}`;
   return `${firstName[0]}. ${lastName}`;
 }
 interface printTeacherFunction {
