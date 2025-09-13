@@ -39,11 +39,21 @@ class Teacher implements TeacherInterface {
 //   if (typeof salary === "number" && salary < 500) return new Teacher();
 //   return new Director();
 // }
-function createEmployee(salary: number | string): Director | Teacher {
+export function createEmployee(salary: number | string): Director | Teacher {
   if (typeof salary === "number") {
     if (salary < 500) {
       return new Teacher();
     }
   }
   return new Director();
+}
+// String literal types
+
+type Subjects = Math | History;
+
+function teachClass(todayClass: string) {
+  if (todayClass == "Math") {
+    return "Teaching Math";
+  }
+  return "Teaching History";
 }
