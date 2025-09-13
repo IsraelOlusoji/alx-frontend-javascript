@@ -49,11 +49,10 @@ export function createEmployee(salary: number | string): Director | Teacher {
 }
 // String literal types
 
-type Subjects = Math | History;
+type Subjects = "Math" | "History";
 
-function teachClass(todayClass: string) {
-  if (todayClass == "Math") {
-    return "Teaching Math";
-  }
+function teachClass(todayClass: Subjects):string {
+  if (todayClass === "Math") return "Teaching Math";
+
   return "Teaching History";
 }
